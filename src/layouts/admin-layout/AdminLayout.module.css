@@ -1,0 +1,84 @@
+.shell {
+  background: #f7f7f3;
+}
+.header {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid #e8e8e2;
+  backdrop-filter: blur(12px);
+}
+.navbar {
+  background: #172721;
+  border-right: none;
+}
+.brandMark,
+.mobileBrand {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: #b95337;
+  border-radius: 12px;
+  font-weight: 850;
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+.mobileBrand {
+  display: none;
+}
+.navLabel {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.42);
+  margin-bottom: 8px;
+}
+.restaurantSelect {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border-color: rgba(255, 255, 255, 0.11) !important;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+}
+.navLink {
+  color: rgba(255, 255, 255, 0.68);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 570;
+  font-size: 14px;
+}
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: white;
+}
+.navLink[data-active] {
+  background: #b95337;
+  color: white;
+}
+.help {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.055);
+  padding: 14px;
+  border-radius: 12px;
+}
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d66242;
+  border: 1.5px solid white;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+@media (max-width: 47.99em) {
+  .mobileBrand {
+    display: grid;
+    width: 34px;
+    height: 34px;
+  }
+}
+:global(.metric-card) {
+  background: white;
+  border-color: #e8e8e2;
+}

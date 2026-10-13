@@ -1,0 +1,225 @@
+.page {
+  background: #fbfbf8;
+  color: #17201d;
+}
+.header {
+  height: 76px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(251, 251, 248, 0.88);
+  border-bottom: 1px solid rgba(34, 52, 45, 0.08);
+  backdrop-filter: blur(16px);
+}
+.navLinks a {
+  color: #59635f;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navLinks a:hover {
+  color: #b95337;
+}
+.hero {
+  padding: 92px 0 108px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 25%, #f8e8df 0, transparent 29%),
+    linear-gradient(180deg, #fbfbf8 0%, #f7f7f1 100%);
+}
+.heroTitle {
+  font-size: clamp(44px, 5vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  max-width: 720px;
+}
+.heroTitle span {
+  color: #b95337;
+}
+.previewWrap {
+  position: relative;
+  padding: 32px 12px 42px 44px;
+}
+.glow {
+  position: absolute;
+  inset: 0;
+  background: #e8b29c;
+  opacity: 0.28;
+  filter: blur(70px);
+  border-radius: 50%;
+}
+.productPreview {
+  position: relative;
+  background: white;
+  border: 1px solid rgba(35, 48, 43, 0.1);
+  box-shadow: 0 28px 75px rgba(28, 45, 38, 0.17);
+  transform: rotate(1.2deg);
+}
+.previewTop {
+  background: #172721;
+  padding: 16px 18px;
+}
+.miniMark {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #b95337;
+  color: #fff;
+  font-family: Georgia, serif;
+  font-weight: 800;
+}
+.floatingCard {
+  position: absolute;
+  right: -18px;
+  bottom: 4px;
+  background: white;
+  border: 1px solid #e9e8e1;
+}
+.trustStrip {
+  padding: 28px 0;
+  background: #fff;
+  border-block: 1px solid #ebeae4;
+}
+.trustName {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #727974;
+}
+.section {
+  padding: 108px 0;
+  scroll-margin-top: 70px;
+}
+.eyebrow {
+  color: #b95337;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+.sectionTitle {
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+.featureCard {
+  border: 1px solid #e9e8e2;
+  background: white;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+.featureCard:hover {
+  transform: translateY(-4px);
+  border-color: #e4c5b9;
+  box-shadow: 0 18px 45px rgba(30, 45, 39, 0.08);
+}
+.darkSection {
+  background: #172721;
+  padding: 108px 0;
+  scroll-margin-top: 70px;
+}
+.kitchenBoard {
+  background: #22352e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.24);
+}
+.liveDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #64c391;
+  box-shadow: 0 0 0 5px rgba(100, 195, 145, 0.12);
+}
+.stepNumber {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff0e9;
+  color: #a4452d;
+  font-weight: 850;
+  margin-bottom: 8px;
+}
+.stepArrow {
+  position: absolute;
+  right: -34px;
+  top: 16px;
+  color: #c7c9c5;
+}
+.cta {
+  padding: 70px 24px;
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(206, 115, 80, 0.35),
+      transparent 38%
+    ),
+    #223a31;
+  box-shadow: 0 24px 70px rgba(32, 54, 46, 0.18);
+}
+.footer {
+  background: #111f1a;
+  padding: 56px 0 32px;
+}
+@media (max-width: 62em) {
+  .hero {
+    padding: 64px 0 80px;
+  }
+  .previewWrap {
+    padding: 20px;
+  }
+  .floatingCard {
+    right: 0;
+  }
+  .trustStrip :global(.mantine-Group-root) {
+    justify-content: center;
+  }
+  .trustName {
+    font-size: 17px;
+  }
+  .stepArrow {
+    display: none;
+  }
+  .section,
+  .darkSection {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 48em) {
+  .header {
+    height: 68px;
+  }
+  .hero {
+    padding: 48px 0 64px;
+  }
+  .heroTitle {
+    font-size: 42px;
+  }
+  .previewWrap {
+    padding: 8px 0 42px;
+  }
+  .floatingCard {
+    right: 4px;
+  }
+  .trustName {
+    display: none;
+  }
+  .section,
+  .darkSection {
+    padding: 64px 0;
+  }
+  .footer :global(.mantine-Group-root) {
+    gap: 16px;
+  }
+  .cta {
+    padding: 52px 20px;
+    border-radius: 20px;
+  }
+}
